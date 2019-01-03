@@ -1,0 +1,29 @@
+# Editors
+.idea/
+.vscode/
+
+# logs
+*.log
+*.log.*
+
+# VCS
+.svn/
+
+# npm
+node_modules/
+
+# lockfile
+package-lock.json
+yarn.lock
+
+# NPM
+/node_modules/
+*.log
+
+# Global (additional insurance for someone who haven't add this in global gitignore)
+.DS_Store
+/.idea
+
+# Build
+/dist/
+.vscode
