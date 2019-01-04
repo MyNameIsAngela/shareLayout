@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import './index.scss'
 
 class Demo extends React.Component {
     constructor(props) {
@@ -10,7 +11,11 @@ class Demo extends React.Component {
     render() {
         return (
             <div className="demo">
-                demo
+                <div className="header">header</div>
+                <div className="main">
+                <div className="sider">sider</div>
+                <div className="content">content</div>
+                </div>
             </div>
         );
     }
