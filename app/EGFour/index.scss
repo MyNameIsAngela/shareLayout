@@ -1,0 +1,24 @@
+.egfour-demo {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    .main {
+        background-color: gray;
+    }
+    .header {
+        background-color: red;
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+    .sider {
+        background-color: blue;
+        grid-column: 1/3;
+        grid-row: 2/13;
+    }
+    .content {
+        background-color: yellow;
+        grid-column: 3/13;
+        grid-row: 2/13;
+    }
+}

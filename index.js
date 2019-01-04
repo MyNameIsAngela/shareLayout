@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
+import { Router, Route, hashHistory } from 'react-router'
+
+import App from './app/App'
+import EGOne from './app/EGOne/index'
+import EGTwo from './app/EGTwo/index'
+import EGThree from './app/EGThree/index'
+import EGFour from './app/EGFour/index'
+import EGFive from './app/EGFive/index'
+import EGSix from './app/EGSix/index'
+import EGSeven from './app/EGSeven/index'
 import './index.scss'
 
-class Demo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
-    render() {
-        return (
-            <div className="demo">
-                <div className="header">header</div>
-                <div className="main">
-                <div className="sider">sider</div>
-                <div className="content">content</div>
-                </div>
-            </div>
-        );
-    }
-}
-
-ReactDOM.render(<Demo />, document.getElementById('root'))
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App} />
+    <Route path="/egone" component={EGOne} />
+    <Route path="/egtwo" component={EGTwo} />
+    <Route path="/egthree" component={EGThree} />
+    <Route path="/egfour" component={EGFour} />
+    <Route path="/egfive" component={EGFive} />
+    <Route path="/egsix" component={EGSix} />
+    <Route path="/egseven" component={EGSeven} />
+  </Router>
+), document.getElementById('root'))
