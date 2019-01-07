@@ -6,6 +6,9 @@ export default React.createClass({
     return (
       <div>
         <h1>Layout</h1>
+        <ul>
+          <li><Link to="/flex-layot">【组件+flex实现】</Link></li>
+        </ul>
         水平导航
         <ul>
           <li><Link to="/egone">示例1 【flex实现】 适用于Chrome Safari Firefox 可切换为其他三种导航类型</Link></li>
