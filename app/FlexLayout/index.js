@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import './index.scss'
-// import { Menu,Button } from "@ss/mtd-react";
-// const SubMenu = Menu.SubMenu;
-// const MenuItem = Menu.Item;
 
 class Layout extends React.Component {
 
     render() {
         console.log(this.props.children);
-        let hasSider = this.props.children && (this.props.children instanceof Array) && this.props.children.some(function (elem) {
+        let hasSider = this.props.children && (this.props.children instanceof Array)&&this.props.children.some(function (elem) {
             return elem.type.name == "Sider";
         })
         hasSider = hasSider ? "has-sider" : "";
@@ -50,19 +47,20 @@ class Footer extends React.Component {
     }
 }
 
-export default class FlexLayout extends React.Component {
-
+export default React.createClass({
     render() {
         return (
             <div className="flex-layout">
                 <Layout>
                     <Header>header</Header>
                     <Layout>
-                        <Sider>sider</Sider>
+                        <Sider>left sidebar</Sider>
                         <Content>main content</Content>
+                        <Sider>right sidebar</Sider>
                     </Layout>
+                    <Footer>footer</Footer>
                 </Layout>
             </div>
         );
     }
-}
+})
