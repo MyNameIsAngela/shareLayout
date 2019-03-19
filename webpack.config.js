@@ -4,13 +4,13 @@ module.exports = {
     entry: './index.js',
     devtool: 'cheap-source-map',
     output: {
-        filename: 'dist/bundle.js',
+        filename: 'bundle.js',
         // publicPath: ''
     }, node: {
         fs: 'empty'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /(\.jsx|\.js)$/,
                 use: {
