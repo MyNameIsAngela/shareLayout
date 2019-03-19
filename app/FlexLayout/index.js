@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './index.scss'
-// import { Menu,Button } from "@ss/mtd-react";
 // const SubMenu = Menu.SubMenu;
 // const MenuItem = Menu.Item;
 
